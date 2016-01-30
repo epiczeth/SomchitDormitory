@@ -20,5 +20,12 @@ namespace SomchitDormitory
         {
             Application.ExitThread();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var renter = new Renters();
+            renter.MdiParent = this;
+            renter.Show();
+        }
     }
 }

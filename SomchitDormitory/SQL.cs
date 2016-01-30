@@ -74,7 +74,7 @@ namespace SomchitDormitory
            try
            {
                OleDbCommand cmd = new OleDbCommand(sqlCommand,getOleDbConnection());
-               dt.Load(cmd.ExecuteReader());
+               dt.Load( cmd.ExecuteReader());
            }
            catch (Exception exception)
            {
